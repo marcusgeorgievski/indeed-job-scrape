@@ -107,7 +107,6 @@ def main(job, skill_search, pages, my_skills):
         Returns Matplotlib graph.
     
         Parameters:
-            skill_search (boolean):Condtion to search skills.
             my_skills (list):List of skills to search.
             df (DataFrame):All listing data.
             
