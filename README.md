@@ -6,7 +6,7 @@ Before using, make sure:
 * You have Chromedriver installed
 * You have Selenium installed
 * You have bs4 installed
-* You change the path to Chromedriver to YOUR computers path
+* You change the path to Chromedriver on YOUR computers path
 
 To start, call the main method with your desired arguments. The parameters are described in the functions docstrings. The data must be change in the code. 
 
@@ -21,6 +21,7 @@ The function will return:
   * Salary
   * Rating
   * Link
+  * Description
   * n/a if any data is not present 
 
 Intended uses:
@@ -30,8 +31,11 @@ Intended uses:
 Warnings:
 * The location variable does not currently work, detailed in comments
 
+Possible Confusions
+* Two link lists: sometimes the link retrived from the 'All Listings' pages vs the specific listings page are different. skill_search = True provides a link that is much more likely to be valid.
+
 Future improvement:
 * Eventually work with more data
-* Fix location
-* Different job sites
-* front end work 
+* Fix location entry
+* Different job sites; glassdoor, monster?
+* front end work; Website/webapp, Tkinter?
