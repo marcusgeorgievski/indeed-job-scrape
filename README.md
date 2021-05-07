@@ -18,7 +18,15 @@ A CSV of all the data retrieved. Used for condensing the data instead of scrolli
 
 <br/>
 
-## Instructions, Technical use
+## How is this different than Indeed???
+
+1. **SKILLS**: indeed cannot quickly show you which skills each job requires
+2. **TIME**: while the program itself takes time to run, you do not need to sit there scrolling through pages. Let the program run and come back in seconds to a minute (depending on how many pages you search) and have all the data infront of you. If a job in the CSV requires skills you do not have, you can brush past it in a split second.
+3. **INSIGHT**: The graph shows you which skills are used the most. Students can use this information to find out which skills they should learn to increase the likelyhood of having the skills a future internship or job requires
+
+<br/>
+
+## Instructions, technical use
 Before using, make sure:
 * You have Chromedriver installed
 * You have Selenium installed
