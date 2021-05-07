@@ -21,6 +21,12 @@ Before using, make sure:
 * You have bs4 installed
 * You change the path to Chromedriver on YOUR computers path
 
+How to:
+* Selenium: open terminal, 'pip install selenium'
+* bs4: open terminal, 'pip install bs4'
+* Chromdriver: setup, https://chromedriver.chromium.org/getting-started
+* Change path: varies, eg. '/Users/YourUserName/Desktop/Chromedriver', if it is on desktop
+
 To start, call the main method with your desired arguments. The parameters are described in the functions docstrings. The data must be change in the code. 
 
 The function will return:
