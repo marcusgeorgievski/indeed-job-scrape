@@ -1,6 +1,7 @@
 # indeed-job-scrape
 
-Simple Indeed job scrape. User decided which job to search for, how many pages to search, whether or not to search each individual job for certain skills (this takes longer), and a list of skills as Strings to search for. The following images are results from:
+## Summary
+Simple Indeed job scrape. User decided which job to search for, how many pages to search, whether or not to search each individual job for certain skills (this takes longer, but is the intended use), and a list of skills as Strings to search for. The following images are results from:
 
 * job = 'Data science'
 * pages = 10
@@ -9,12 +10,15 @@ Simple Indeed job scrape. User decided which job to search for, how many pages t
 
 <img width="1410" alt="Skill Graph" src="https://user-images.githubusercontent.com/76178340/117382997-c6093700-aead-11eb-8379-d7d31cd7edc9.png">
 
-Skills are NOT double counted, if it is present multiple times in a job description, it is only counted once.
+When you are searching for a custom job, you may create a list full of skills or possible requirements for a specific job (e.g. technical skills, education requirements, such as those listed on the graph. Skills are NOT double counted, if it is present multiple times in a job description, it is only counted once.
 
 <img width="1036" alt="ccsssvvv" src="https://user-images.githubusercontent.com/76178340/117383248-5a739980-aeae-11eb-883b-9be2100d4a17.png">
 
-A CSV of all the data retrieved.
+A CSV of all the data retrieved. Used for condensing the data instead of scrolling through pages and clicking on each one. You can also see which skills are present in each job at a quick glance. If one catches your eye, the full description is present in the last column, or you may use the link to go to job posting online.
 
+<br/>
+
+## Instructions, Technical use
 Before using, make sure:
 * You have Chromedriver installed
 * You have Selenium installed
@@ -44,17 +48,17 @@ The function will return:
   * n/a if any data is not present 
 
 Intended uses:
-* bar graph gives you a good visual of which skills are more used than others, perhaps you should choose to learn the more used skills
+* bar graph gives you a good visual of which skills are more used than others, perhaps you should choose to learn the skills with the most mentions first
 * The csv file allows you to quickly see all the important data, condensed. A link is provided to go to the specific job listing
 
-Warnings:
+Note:
 * The location variable does not currently work, detailed in comments
 
 Possible Confusions
-* Two link lists: sometimes the link retrived from the 'All Listings' pages vs the specific listings page are different. skill_search = True provides a link that is much more likely to be valid.
+* Three 'link' lists: Can be ignored, this is for functionality. Sometimes the link retrived from the 'All Listings' pages vs the specific listings page are different. skill_search = True provides a link that is much more likely to be valid.
 
 Future improvement:
+* front end work; Website/webapp, Tkinter, etc?
 * Eventually work with more data
 * Fix location entry
 * Different job sites; glassdoor, monster?
-* front end work; Website/webapp, Tkinter?
