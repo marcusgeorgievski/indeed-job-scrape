@@ -10,7 +10,7 @@ Simple Indeed job scrape. User decided which job to search for, how many pages t
 
 <img width="1410" alt="Skill Graph" src="https://user-images.githubusercontent.com/76178340/117382997-c6093700-aead-11eb-8379-d7d31cd7edc9.png">
 
-When you are searching for a custom job, you may create a list full of skills or possible requirements for a specific job (e.g. technical skills, education requirements, such as those listed on the graph. Skills are NOT double counted, if it is present multiple times in a job description, it is only counted once.
+When you are searching for a custom job, you may create a list full of skills or possible requirements for a specific job (e.g. technical skills, education requirements, such as those listed on the graph. If a skill is present in the description of a job, a +1 will be added to its occurence. For example, if we search 15 jobs, and 12/15 jobs have 'Python' in their description, python will have a value of 12 on the graph. This provides a good visual as to which skills are in demand or more widely used than others. Skills are NOT double counted, if it is present multiple times in a job description, it is only counted once.
 
 <img width="1036" alt="ccsssvvv" src="https://user-images.githubusercontent.com/76178340/117383248-5a739980-aeae-11eb-883b-9be2100d4a17.png">
 
