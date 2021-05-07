@@ -62,3 +62,4 @@ Future improvement:
 * Eventually work with more data
 * Fix location entry
 * Different job sites; glassdoor, monster?
+* look into use of regex, for example; the programming language R is hard to search for because any word with an r in it will count as a mention. ' R ' with spaces on each side could work, but in many jobs HTML, it is present as '\nR' or '\*R'. while this will count as a mention, '\nRead' would yield a mention as well becuase '\nR' is present. We could list each one, but that would give us a graph with R mentioned 3+ times!
