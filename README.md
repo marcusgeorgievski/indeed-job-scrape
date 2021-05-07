@@ -1,5 +1,8 @@
 # indeed-job-scrape
 
+* *indeed_scrape.py* works by itself
+* *modular-scrape/indeed_scrape_client.py* and *modular-scrape/scrape.py* work as a client-module, *scrape.py* is the module
+
 ## Summary
 Simple Indeed job scrape. User decided which job to search for, how many pages to search, whether or not to search each individual job for certain skills (this takes longer, but is the intended use), and a list of skills as Strings to search for. The following images are results from:
 
