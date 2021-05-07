@@ -1,6 +1,19 @@
 # indeed-job-scrape
 
-Simpled Indeed job scrape. Code is well documented and explains every step. 
+Simple Indeed job scrape. User decided which job to search for, how many pages to search, whether or not to search each individual job for certain skills (this takes longer), and a list of skills as Strings to search for. The following images are results from:
+
+* job = 'Data science'
+* pages = 10
+* skill_search = True
+* skills = ['Python', 'SQL', ...], filled with the skills present on the graphs y axis
+
+<img width="1410" alt="Skill Graph" src="https://user-images.githubusercontent.com/76178340/117382997-c6093700-aead-11eb-8379-d7d31cd7edc9.png">
+
+Skills are NOT double counted, if it is present multiple times in a job description, it is only counted once.
+
+<img width="1036" alt="ccsssvvv" src="https://user-images.githubusercontent.com/76178340/117383248-5a739980-aeae-11eb-883b-9be2100d4a17.png">
+
+A CSV of all the data retrieved.
 
 Before using, make sure:
 * You have Chromedriver installed
@@ -12,7 +25,7 @@ To start, call the main method with your desired arguments. The parameters are d
 
 The function will return:
 * A CSV file on the directory it is saved in
-* A matplotlib graph with the number of occurences for each skill
+* A matplotlib graph with the number of occurences for each skill (if skill_search==True)
 * The following data:
   * Job 
   * Company
