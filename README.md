@@ -1,10 +1,10 @@
 # indeed-skill-scrape
 
 * *indeed_scrape.py* works by itself
-* *modular-scrape/indeed_scrape_client.py* and *modular-scrape/scrape.py* work as a client-module, *scrape.py* is the module
+* *modular-scrape/indeed_scrape_client.py* AND *modular-scrape/scrape.py* work as a client-module, *scrape.py* is the module
 
 ## Summary
-Simple Indeed job scrape. User decided which job to search for, how many pages to search, whether or not to search each individual job for certain skills (this takes longer, but is the intended use), and a list of skills as Strings to search for. The following images are results from:
+Simple Indeed job skill scrape. User decided which job to search for, how many pages to search, whether or not to search each individual job for certain skills (this takes longer, but is the intended use), and a list of skills as Strings to search for. The following images are results from:
 
 * job = 'Data science'
 * pages = 10
@@ -74,3 +74,6 @@ Future improvement:
 * Fix location entry
 * Different job sites; glassdoor, monster?
 * look into use of regex, for example; the programming language R is hard to search for because any word with an r in it will count as a mention. ' R ' with spaces on each side could work, but in many jobs HTML, it is present as '\nR' or '\*R'. while this will count as a mention, '\nRead' would yield a mention as well becuase '\nR' is present. We could list each one, but that would give us a graph with R mentioned 3+ times!
+
+Project notes:
+* focus changed from job scrape to skill scrape, job scrape is too basic and overused, searching for in demand skills is not
