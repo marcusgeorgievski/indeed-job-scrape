@@ -1,4 +1,4 @@
-# indeed-job-scrape
+# indeed-skill-scrape
 
 * *indeed_scrape.py* works by itself
 * *modular-scrape/indeed_scrape_client.py* and *modular-scrape/scrape.py* work as a client-module, *scrape.py* is the module
