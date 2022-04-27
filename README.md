@@ -1,5 +1,6 @@
 # indeed-skill-scrape
 
+* Selenium 4 has made many changes, current version will not work
 * *indeed_scrape.py* works by itself
 * *modular-scrape/indeed_scrape_client.py* AND *modular-scrape/scrape.py* work as a client-module, *scrape.py* is the module
 
