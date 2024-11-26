@@ -1,4 +1,4 @@
-# indeed-skill-scrape
+# Job Data Analysis
 
 * Selenium 4 has made many changes, current version will not work
 * *indeed_scrape.py* works by itself
